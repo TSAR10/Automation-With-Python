@@ -1,6 +1,7 @@
 # using selenium and chrome webDriver to automate
 
 from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
 # taking email or phone no. and password as input
  
