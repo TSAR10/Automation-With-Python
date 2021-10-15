@@ -20,11 +20,13 @@ df = pd.DataFrame(columns=['Rank','Country','Total Cases','New Cases','Deaths','
 for i in browser.find_elements_by_xpath("//*[@id='main_table_countries_today']/tbody/tr"):
     td_list = i.find_elements_by_tag_name('td')
     row = []
+    
     for td in td_list:
         row.append(td.text)
     data={}
+    
     for j in range(len(df.columns)):
         data[df.columns[j]] = row[j]
     
-    df.append(data, ignore_index=True)
+    df.append(data, ignore_index = True)
 print(df)

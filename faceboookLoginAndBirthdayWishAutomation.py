@@ -51,6 +51,7 @@ for element in bday_list:
     post.send_keys("Happy Birthday, Best wishes.") # To enter the bday wish
     post.send_keys(Keys.RETURN) #To send the wish
     c=c+1
+
     if(c>num):  # This prevents putting wishes for belated birthday
         break
 

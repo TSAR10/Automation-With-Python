@@ -13,7 +13,7 @@ browser = webdriver.Chrome('C:\\webdrivers\\chromedriver.exe')
 
 # opening the instagram page of that profile handle
 
-url = "https://www.instagram.com/"+profile+"/"
+url = "https://www.instagram.com/" + profile + "/"
 browser.get(url)
 
 # getting the picture
@@ -33,6 +33,6 @@ path = "E:\\igPhoto\\" + profile + ".jpg"
  
 # saving the photo at local
 
-urllib.request.urlretrieve(source,path)
+urllib.request.urlretrieve(source, path)
 
 print("Image Downloaded")

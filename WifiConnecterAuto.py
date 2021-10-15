@@ -35,9 +35,10 @@ else:
 
 while True:
     available_networks = os.popen("netsh wlan show networks").read()
+
     if preferred_networks not in available_networks:
         print("Network not available")
     else:
-        os.popen('netsh wlan connect name='+'"'+preferred_networks+'"').read()
+        os.popen('netsh wlan connect name=' + '"' + preferred_networks + '"').read()
         print("Network Connected")
         break

